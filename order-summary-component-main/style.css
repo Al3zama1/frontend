@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* background-color: hsl(225, 100%, 94%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.order-summary {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+}
+
+.order-summary__hero-img {
+  width: 100%;
+}
+
+.order-summary__heading {
+  margin: 40px 0 20px;
+}
+
+.order-summary__description {
+  font-size: 16px;
+  width: 70%;
+  margin: auto;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 20px;
+}
+
+.order-summary__subscription {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.order-summary__subscription__details {
+  display: flex;
+  align-items: center;
+}
+
+.order-summary__subscription__details__plan {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.order-summary__subscription__details__plan__name {
+  margin-bottom: 0px;
+}
+
+.order-summary__subscription__details__plan__cost {
+  margin-top: 0;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.order-summary__subscription__btn {
+  color: hsl(245, 75%, 52%);
+}
+
+.order-summary__subscription__btn:hover {
+  text-decoration: none;
+}
+
+.order-summary__payment-button {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  height: 35px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.order-summary__payment-button:hover {
+  background-color: hsl(245, 75%, 70%);
+}
+
+.order-summary__cancel-order {
+  display: block;
+  width: 50%;
+  background-color: white;
+  margin: auto;
+  border-style: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.order-summary__cancel-order:hover {
+  color: black;
+}

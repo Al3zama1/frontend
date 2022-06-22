@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview {
+  margin: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+.preview__component {
+  min-height: 25em;
+  width: 15em;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
+.preview__component__title {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.preview__component__description {
+  width: 10em;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.preview__component--orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.preview__component--dark-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.preview__component--very-dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.preview__component__link {
+  display: inline-block;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.5em 1em;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  border-radius: 1em;
+}
+
+.preview__component__link--orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.preview__component__link--dark-cyan {
+  color: hsl(184, 100%, 22%);
+}
+
+.preview__component__link--very-dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 40.31em) {
+  body {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 32.18em) {
+    body {
+      font-size: 15px;
+    }
+    .preview {
+      flex-direction: column;
+    }
+  }
+}

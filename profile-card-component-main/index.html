@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <article class="profile-card">
+        <img
+          class="profile-card__bacground-pattern"
+          src="./images/bg-pattern-card.svg"
+          alt="card-pattern"
+        />
+        <section class="profile-card__profile-info">
+          <img
+            src="./images/image-victor.jpg"
+            alt="user"
+            class="profile-card__profile-info__user-img"
+          />
+          <h4 class="profile-card__profile-info__user-name">
+            Victor Crest
+            <span class="profile-card__profile-info__user-age">26</span>
+          </h4>
+          <p class="profile-card__profile-info__user-location">London</p>
+        </section>
+        <section class="profile-card__profile-stats">
+          <div class="profile-card__profile-stats__stat">
+            <h4 class="profile-card__profile-stats__stat__count">80K</h4>
+            <p class="profile-card__profile-stats__stat__title">Followers</p>
+          </div>
+          <div class="profile-card__profile-stats__stat">
+            <h4 class="profile-card__profile-stats__stat__count">803K</h4>
+            <p class="profile-card__profile-stats__stat__title">Likes</p>
+          </div>
+          <div class="profile-card__profile-stats__stat">
+            <h4 class="profile-card__profile-stats__stat__count">1.4K</h4>
+            <p class="profile-card__profile-stats__stat__title">Photos</p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
