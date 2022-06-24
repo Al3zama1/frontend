@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  color: hsl(303, 10%, 53%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.heading {
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+}
+
+.heading__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.8;
+  margin-bottom: 0;
+}
+
+.heading__description {
+  margin-top: 0;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.rating {
+  background-color: hsl(300, 24%, 96%);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+
+.rating__heading {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.review {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.review__user {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.review__user__img {
+  border-radius: 50%;
+  width: 3em;
+}
+
+.review__user__details__name {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.review__user__details__status {
+  margin-top: 0;
+  color: hsl(333, 80%, 67%);
+}
+
+@media screen and (min-width: 900px) {
+  .raiting-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading {
+    flex-basis: 20em;
+  }
+
+  .ratings {
+    margin-top: 4em;
+    flex-basis: 30em;
+    margin-left: 1em;
+  }
+
+  .rating {
+    display: flex;
+    gap: 0 1em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rating__top {
+    margin-right: 5em;
+  }
+
+  .rating__middle {
+    margin-right: 3em;
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin-top: 3em;
+    height: 17em;
+  }
+
+  .review {
+    max-height: 15em;
+  }
+
+  .review__middle {
+    margin-top: 1em;
+  }
+
+  .review__right {
+    margin-top: 2em;
+  }
+}
